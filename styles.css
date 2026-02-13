@@ -90,13 +90,19 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    margin-top: 0;
-    opacity: 0.2;
-    transition: opacity 0.3s;
-    transform: scale(0.7);
+    opacity: 0.4; /* чуть виднее, как и договаривались */
+    transform: scale(0.85); 
+    filter: blur(2px); /* эффект легкого тумана */
+    transition: opacity 0.3s, filter 0.3s; /* плавный переход */
     z-index: 2;
     animation: subtle-hint 2s infinite alternate;
-    animation-delay: 5s;
+    animation-delay: 2s;
+}
+
+.secret-answer:hover {
+    opacity: 1;
+    filter: blur(0); /* убираем размытие при наведении */
+    animation: none; 
 }
 
 .secret-answer .cute-btn {
