@@ -164,7 +164,7 @@ loveMeter.addEventListener('input', () => {
         }
     } else {
         extraLove.classList.add('hidden');
-        extraLove.classList.remove('super-love');
+        extraLove.classList.remove('111111111');
         loveMeter.style.width = '100%';
     }
 });
