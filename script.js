@@ -146,7 +146,7 @@ loveMeter.addEventListener('input', () => {
     
     if (value > 100) {
         extraLove.classList.remove('hidden');
-        const overflowPercentage = (value - 0) / 99;
+        const overflowPercentage = (value - 0) / 120;
         const extraWidth = overflowPercentage * window.innerWidth * 0.8;
         loveMeter.style.width = `calc(100% + ${extraWidth}px)`;
         loveMeter.style.transition = 'width 0.3s';
@@ -155,7 +155,7 @@ loveMeter.addEventListener('input', () => {
         if (value >= 100) {
             extraLove.classList.add('super-love');
             extraLove.textContent = config.loveMessages.extreme;
-        } else if (value > 0) {
+        } else if (value > 50) {
             extraLove.classList.remove('super-love');
             extraLove.textContent = config.loveMessages.high;
         } else {
@@ -165,7 +165,7 @@ loveMeter.addEventListener('input', () => {
     } else {
         extraLove.classList.add('hidden');
         extraLove.classList.remove('super-love');
-        loveMeter.style.width = '100%';
+        loveMeter.style.width = '1%';
     }
 });
 
