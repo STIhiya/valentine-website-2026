@@ -14,8 +14,8 @@ const CONFIG = {
     // Floating emojis that appear in the background
     // Find more emojis at: https://emojipedia.org
     floatingEmojis: {
-        hearts: ['❤️', '💖', '💝', '💗', '💓'],  // Heart emojis
-        bears: ['🧸', '🐻']                       // Cute bear emojis
+        hearts: ['❤️', '✨', '🧡', '🏔️', '☕'],  // Heart emojis
+        bears: ['🚙', '💨', '🔥', '🧗‍♂️', '🐾']                       // Cute bear emojis
     },
 
     // Questions and answers
@@ -33,9 +33,9 @@ const CONFIG = {
             nextBtn: "Зафиксировать честный ответ ❤️"                                         // Text for the next button
         },
         third: {
-            text: "Will you be my Valentine on February 14th, 2025? 🌹", // The big question!
-            yesBtn: "Yes!",                                             // Text for "Yes" button
-            noBtn: "No"                                                 // Text for "No" button
+            text: "Принимаешь аванс в виде этой валентинки и соглашаешься на встречу?🌹", // The big question!
+            yesBtn: "Конечно",                                             // Text for "Yes" button
+            noBtn: "Нет"                                                 // Text for "No" button
         }
     },
 
@@ -49,9 +49,9 @@ const CONFIG = {
 
     // Messages that appear after they say "Yes!"
     celebration: {
-        title: "Yay! I'm the luckiest person in the world! 🎉💝💖💝💓",
-        message: "Now come get your gift, a big warm hug and a huge kiss!",
-        emojis: "🎁💖🤗💝💋❤️💕"  // These will bounce around
+        title: "Гештальт успешно закрыт! Ты сделала правильный выбор. 🎉",
+        message: "Твой внутренний авантюрист явно знает толк в отдыхе. Разгребай свои дедлайны, и поедем восстанавливать твой ресурс в горы!",
+        emojis: "🧘‍♂️🏔️☕🔋✨"  // These will bounce around
     },
 
     // Color scheme for the website
