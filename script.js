@@ -151,11 +151,11 @@ loveMeter.addEventListener('input', () => {
         loveMeter.style.width = `calc(100% + ${extraWidth}px)`;
         loveMeter.style.transition = 'width 0.3s';
         
-        // Show different messages based on the value
-        if (value >= 100) {
+           // Show different messages based on the value
+        if (value >= 5000) {
             extraLove.classList.add('super-love');
             extraLove.textContent = config.loveMessages.extreme;
-        } else if (value > 50) {
+        } else if (value > 1000) {
             extraLove.classList.remove('super-love');
             extraLove.textContent = config.loveMessages.high;
         } else {
@@ -165,7 +165,7 @@ loveMeter.addEventListener('input', () => {
     } else {
         extraLove.classList.add('hidden');
         extraLove.classList.remove('super-love');
-        loveMeter.style.width = '1%';
+        loveMeter.style.width = '100%';
     }
 });
 
